@@ -22,9 +22,7 @@
   "paths": {
     "/account/payment_methods": {
       "get": {
-        "tags": [
-          "Payment Methods"
-        ],
+        "tags": ["Payment Methods"],
         "summary": "List payment methods for a Merchant",
         "description": "Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret",
         "operationId": "List all Payment Methods for a Merchant",
@@ -798,9 +796,7 @@
     },
     "/customers": {
       "post": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "summary": "Customers - Create",
         "description": "Creates a customer object and stores the customer details to be reused for future payments. Incase the customer already exists in the system, this API will respond with the customer details.",
         "operationId": "Create a Customer",
@@ -846,9 +842,7 @@
     },
     "/customers/list": {
       "post": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "summary": "Customers - List",
         "description": "Lists all the customers for a particular merchant id",
         "operationId": "List all Customers for a Merchant",
@@ -879,9 +873,7 @@
     },
     "/customers/payment_methods": {
       "get": {
-        "tags": [
-          "Payment Methods"
-        ],
+        "tags": ["Payment Methods"],
         "summary": "List payment methods for a Payment",
         "description": "Lists all the applicable payment methods for a particular payment tied to the `client_secret`",
         "operationId": "List all Payment Methods for a Customer",
@@ -994,9 +986,7 @@
     },
     "/customers/{customer_id}": {
       "get": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "summary": "Customers - Retrieve",
         "description": "Retrieves a customer's details",
         "operationId": "Retrieve a Customer",
@@ -1044,9 +1034,7 @@
         ]
       },
       "post": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "summary": "Customers - Update",
         "description": "Updates the customer's details in a customer object",
         "operationId": "Update a Customer",
@@ -1093,9 +1081,7 @@
         ]
       },
       "delete": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "summary": "Customers - Delete",
         "description": "Deletes a customer record",
         "operationId": "Delete a Customer",
@@ -2982,10 +2968,7 @@
         "oneOf": [
           {
             "type": "object",
-            "required": [
-              "type",
-              "list"
-            ],
+            "required": ["type", "list"],
             "description": "Object to filter the customer countries for which the payment method is displayed",
             "properties": {
               "type": {
@@ -3040,10 +3023,7 @@
         "oneOf": [
           {
             "type": "object",
-            "required": [
-              "type",
-              "list"
-            ],
+            "required": ["type", "list"],
             "description": "Object to filter the currencies for which the payment method is displayed",
             "properties": {
               "type": {
@@ -4954,10 +4934,7 @@
       },
       "ConnectorVolumeSplit": {
         "type": "object",
-        "required": [
-          "connector",
-          "split"
-        ],
+        "required": ["connector", "split"],
         "properties": {
           "connector": {
             "$ref": "#/components/schemas/RoutableConnectorChoice"
@@ -7668,10 +7645,7 @@
       "MerchantConnectorCreate": {
         "type": "object",
         "description": "Create a new Merchant Connector for the merchant account. The connector could be a payment processor / facilitator / acquirer or specialized services like Fraud / Accounting etc.\"",
-        "required": [
-          "connector_type",
-          "connector_name"
-        ],
+        "required": ["connector_type", "connector_name"],
         "properties": {
           "connector_type": {
             "$ref": "#/components/schemas/ConnectorType"
@@ -8076,10 +8050,7 @@
       },
       "MerchantConnectorWebhookDetails": {
         "type": "object",
-        "required": [
-          "merchant_secret",
-          "additional_secret"
-        ],
+        "required": ["merchant_secret", "additional_secret"],
         "description": "Webhook details related to the connector account",
         "properties": {
           "merchant_secret": {
@@ -9495,9 +9466,7 @@
               "$ref": "#/components/schemas/RequestPaymentMethodTypes"
             },
             "description": "Object containing details about the subtype of payment method and relevant configs",
-            "example": [
-              "credit"
-            ],
+            "example": ["credit"],
             "nullable": true
           }
         }
@@ -11310,10 +11279,7 @@
       "PrimaryBusinessDetails": {
         "type": "object",
         "description": "Details about the primary business unit of the merchant account",
-        "required": [
-          "country",
-          "business"
-        ],
+        "required": ["country", "business"],
         "properties": {
           "country": {
             "$ref": "#/components/schemas/CountryAlpha2"
@@ -11350,12 +11316,7 @@
       "ReconStatus": {
         "type": "string",
         "description": "Used to indicate the status of the recon module for a merchant account",
-        "enum": [
-          "not_requested",
-          "requested",
-          "active",
-          "disabled"
-        ]
+        "enum": ["not_requested", "requested", "active", "disabled"]
       },
       "RedirectResponse": {
         "type": "object",
@@ -11598,10 +11559,7 @@
       "RefundType": {
         "type": "string",
         "description": "To indicate whether to refund needs to be instant or scheduled. Default value is instant",
-        "enum": [
-          "scheduled",
-          "instant"
-        ]
+        "enum": ["scheduled", "instant"]
       },
       "RefundUpdateRequest": {
         "type": "object",
@@ -11641,7 +11599,7 @@
           },
           "card_networks": {
             "type": "array",
-            "description": "Indicates the card network",
+            "description": "Hola the card network",
             "items": {
               "$ref": "#/components/schemas/CardNetwork"
             },
@@ -11880,9 +11838,7 @@
       },
       "RoutableConnectorChoice": {
         "type": "object",
-        "required": [
-          "connector"
-        ],
+        "required": ["connector"],
         "properties": {
           "connector": {
             "$ref": "#/components/schemas/RoutableConnectors"
@@ -12185,16 +12141,11 @@
         "oneOf": [
           {
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ],
+            "required": ["type", "data"],
             "properties": {
               "type": {
                 "type": "string",
-                "enum": [
-                  "single"
-                ],
+                "enum": ["single"],
                 "description": "A single connector to route the payment through."
               },
               "data": {
@@ -12204,16 +12155,11 @@
           },
           {
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ],
+            "required": ["type", "data"],
             "properties": {
               "type": {
                 "type": "string",
-                "enum": [
-                  "priority"
-                ],
+                "enum": ["priority"],
                 "description": "A priority list of connectors to route the payment through. The first connector is used for the payment, and subsequent connectors will be used in case of retries."
               },
               "data": {
@@ -12226,16 +12172,11 @@
           },
           {
             "type": "object",
-            "required": [
-              "type",
-              "data"
-            ],
+            "required": ["type", "data"],
             "properties": {
               "type": {
                 "type": "string",
-                "enum": [
-                  "volume_split"
-                ],
+                "enum": ["volume_split"],
                 "description": "A list of connectors with a percentage/proportion weight for each connector. The connector for the payment is selected in a weighted random manner based on the given proportions."
               },
               "data": {
