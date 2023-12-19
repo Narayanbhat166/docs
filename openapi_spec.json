@@ -13737,6 +13737,7 @@
         "oneOf": [
           {
             "type": "object",
+            "title": "Single",
             "required": ["type", "data"],
             "properties": {
               "type": {
@@ -13750,6 +13751,7 @@
           },
           {
             "type": "object",
+            "title": "Priority",
             "required": ["type", "data"],
             "properties": {
               "type": {
@@ -13766,6 +13768,7 @@
           },
           {
             "type": "object",
+            "title": "VolumeSplit",
             "required": ["type", "data"],
             "properties": {
               "type": {

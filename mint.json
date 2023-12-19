@@ -149,9 +149,7 @@
     },
     {
       "group": "Locker - Health",
-      "pages": [
-        "locker-api-reference/locker-health/get-health"
-      ]
+      "pages": ["locker-api-reference/locker-health/get-health"]
     },
     {
       "group": "Locker - Key Custodian",
@@ -159,6 +157,21 @@
         "locker-api-reference/key-custodian/provide-key-1",
         "locker-api-reference/key-custodian/provide-key-2",
         "locker-api-reference/key-custodian/unlock-the-locker"
+      ]
+    },
+    {
+      "group": "Routing",
+      "pages": [
+        "api-reference/routing/routing--list",
+        "api-reference/routing/routing--create",
+        "api-reference/routing/routing--retrieve-config",
+        "api-reference/routing/routing--deactivate",
+        "api-reference/routing/routing--retrieve-default-config",
+        "api-reference/routing/routing--update-default-config",
+        "api-reference/routing/routing--retrieve-default-for-profile",
+        "api-reference/routing/routing--update-default-for-profile",
+        "api-reference/routing/routing--retrieve",
+        "api-reference/routing/routing--activate-config"
       ]
     },
     {
@@ -178,8 +191,5 @@
     "github": "https://github.com/juspay/hyperswitch",
     "linkedin": "https://www.linkedin.com/company/hyperswitch"
   },
-  "openapi": [
-    "openapi_spec.json",
-    "rust_locker_open_api_spec.yml"
-  ]
+  "openapi": ["openapi_spec.json", "rust_locker_open_api_spec.yml"]
 }
