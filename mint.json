@@ -183,16 +183,16 @@
       ]
     },
     {
-      "group": "Schemas",
-      "pages": ["api-reference/schemas/outgoing--webhook"]
-    },
-    {
       "group": "Blocklist",
       "pages": [
         "api-reference/blocklist/get-blocklist",
         "api-reference/blocklist/post-blocklist",
         "api-reference/blocklist/delete-blocklist"
       ]
+    },
+    {
+      "group": "Schemas",
+      "pages": ["api-reference/schemas/outgoing--webhook"]
     }
   ],
   "footerSocials": {
